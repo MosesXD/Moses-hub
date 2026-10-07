@@ -8,8 +8,8 @@ This is the first starter version of Moses' personal website.
 - script.js — small interactive features
 
 ## Next stages
-1. Personalize the text
-2. Add real links
+1. Personalize the text✓
+2. Add real links✓
 3. Add your own images/gallery
 4. Improve animations and navigation
 5. Add more pages if needed

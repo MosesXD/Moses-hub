@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Trading and investing section of Moses' Hub (coming soon).">
+  <title>Trading · Moses' Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER: copy this into every page. Keep the ids menuToggle and navLinks! -->
+  <header class="nav">
+    <a class="logo" href="index.html">MOSES<span>°</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <nav id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="links.html">Links</a>
+      <a href="trading.html" aria-current="page">Trading</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO: the big headline at the top of the page -->
+    <section class="hero hero-short">
+      <div class="bubble bubble-one"></div>
+      <div class="bubble bubble-two"></div>
+      <div class="hero-content">
+        <p class="eyebrow">TRADING &amp; INVESTING</p>
+        <h1>Trading, <span>coming soon.</span></h1>
+        <p class="hero-text">
+          A section of the hub about markets, learning, and what I'm
+          planning to offer. It's a preview for now, and nothing here is live yet.
+        </p>
+        <div class="hero-buttons">
+          <!-- This is a <span>, not a button or link, so it can't do anything.
+               When you go live, swap it for a real link. -->
+          <span class="button primary is-disabled" aria-disabled="true">Coming soon</span>
+          <a class="button secondary" href="links.html">Contact links</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT'S PLANNED: three cards. Copy a whole <article> to add another. -->
+    <section class="section">
+      <p class="eyebrow">WHAT'S PLANNED</p>
+      <h2>Three ways this could work.</h2>
+      <!-- NOTICE: keep this box while the page is a preview. Edit the words if you like. -->
+      <p class="notice">
+        Preview only. Nothing on this page is an offer, financial advice, or a promise of results.
+      </p>
+      <div class="cards">
+        <article class="card project-card">
+          <h3>Learn</h3>
+          <p>Plain-language guides on how markets and trading work.</p>
+          <span class="tag">COMING SOON</span>
+        </article>
+        <article class="card project-card">
+          <h3>Trade With Me</h3>
+          <p>A way to follow along with how I approach trading. Details to come.</p>
+          <span class="tag">COMING SOON</span>
+        </article>
+        <article class="card project-card">
+          <h3>Managed Accounts</h3>
+          <p>Not available. Nothing is being offered yet.</p>
+          <span class="tag">COMING SOON</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS: these really are steps in order, so numbers make sense here. -->
+    <section class="section section-tight">
+      <p class="eyebrow">HOW IT WORKS</p>
+      <h2>The plan, step by step.</h2>
+      <div class="cards">
+        <article class="card project-card">
+          <span class="project-number">01</span>
+          <h3>Learn the basics</h3>
+          <p>Start with simple guides, at your own pace.</p>
+        </article>
+        <article class="card project-card">
+          <span class="project-number">02</span>
+          <h3>Follow along</h3>
+          <p>See how I approach trading, once that part is ready.</p>
+        </article>
+        <article class="card project-card">
+          <span class="project-number">03</span>
+          <h3>Ask questions</h3>
+          <p>Reach out through the links page.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PERFORMANCE PREVIEW: layout only. The dashes mean "no real numbers".
+         Don't put sample results here, so nobody mistakes them for real ones. -->
+    <section class="section section-tight">
+      <p class="eyebrow">PREVIEW</p>
+      <h2>A look at the layout.</h2>
+      <p class="notice">
+        Layout only. These boxes show where real numbers could go later. No real results are shown.
+      </p>
+      <div class="cards">
+        <article class="card stat-card"><small>DEMO DATA</small><strong>&mdash;</strong><span>Daily</span></article>
+        <article class="card stat-card"><small>DEMO DATA</small><strong>&mdash;</strong><span>Weekly</span></article>
+        <article class="card stat-card"><small>DEMO DATA</small><strong>&mdash;</strong><span>Monthly</span></article>
+      </div>
+    </section>
+
+    <!-- FAQ: each <details> is a question that opens when tapped. -->
+    <section class="section section-tight">
+      <p class="eyebrow">FAQ</p>
+      <h2>Questions.</h2>
+      <div class="faq">
+        <details>
+          <summary>Is this live yet?</summary>
+          <p>No. It's a preview. There are no sign-ups, payments, or accounts.</p>
+        </details>
+        <details>
+          <summary>Is this financial advice?</summary>
+          <p>No. Nothing here is advice. Trading carries risk, and you can lose money.</p>
+        </details>
+        <details>
+          <summary>How do I ask something?</summary>
+          <p>Use the <a href="links.html">links page</a> to reach me.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: copy this into every page. Keep the id year! -->
+  <footer>
+    <p>Built by Moses · <span id="year"></span></p>
+    <p>Version 3.0 · Now with pages.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

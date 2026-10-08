@@ -126,7 +126,7 @@ h1 span {
 .bubble-one { width: 320px; height: 320px; right: -80px; top: 8%; }
 .bubble-two { width: 170px; height: 170px; left: -60px; bottom: 5%; }
 
-.section { padding: 7rem 7%; max-width: 1250px; margin: auto;scroll-margin-top: 5rem; }
+.section { padding: 7rem 7%; max-width: 1250px; margin: auto; scroll-margin-top: 5rem; }
 .section h2 { font-size: clamp(2rem, 5vw, 3.7rem); letter-spacing: -.05em; margin-bottom: 2rem; }
 
 .about-grid, .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
@@ -199,3 +199,56 @@ footer {
   .hero { min-height: 80vh; }
   footer { flex-direction: column; gap: .4rem; }
 }
+
+/* ---------- Added for the multi-page version ---------- */
+
+/* Keeps the footer at the bottom of short pages */
+body { min-height: 100vh; display: flex; flex-direction: column; }
+main { flex: 1; }
+
+/* Highlights the menu link for the page you're on */
+nav a[aria-current="page"] { color: var(--text); }
+
+/* Makes a whole card clickable (used on the Home page) */
+.card-link { display: block; }
+
+/* Spacing tweaks for the About page */
+.about-currently { margin-top: 1rem; }
+.section.section-tight { padding-top: 0; }
+
+/* ---------- Trading page ---------- */
+
+/* A shorter version of the big top section */
+.hero-short { min-height: 60vh; }
+
+/* Makes something look switched off (used on "Coming soon" buttons) */
+.is-disabled { opacity: .5; cursor: not-allowed; }
+
+/* The "Preview only" message boxes */
+.notice {
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--cyan);
+  border-radius: 14px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--muted);
+  font-size: .9rem;
+  background: rgba(255,255,255,.03);
+}
+
+/* The three demo boxes in the preview section */
+.stat-card small { display: block; color: var(--cyan); font-size: .7rem; letter-spacing: .12em; }
+.stat-card strong { display: block; font-size: 2.4rem; margin: .4rem 0; }
+.stat-card span { color: var(--muted); }
+
+/* The FAQ list */
+.faq { display: grid; gap: .8rem; max-width: 700px; }
+.faq details {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 1rem 1.2rem;
+  background: rgba(255,255,255,.035);
+}
+.faq summary { cursor: pointer; font-weight: 700; }
+.faq details p { color: var(--muted); margin-top: .6rem; }
+.faq details a { color: var(--cyan); }

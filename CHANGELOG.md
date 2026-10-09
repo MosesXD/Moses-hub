@@ -1,4 +1,8 @@
 # Changelog
+## v3.2
+- Added visitor analytics (Umami)
+- Added a site icon (shows in the browser tab)
+
 ## v3.1
 - Added a smooth fade between pages
 - Added the Last.fm "now playing" code (switches on once the Netlify function is set up)

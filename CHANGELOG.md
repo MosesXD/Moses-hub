@@ -1,4 +1,7 @@
 # Changelog
+## v3.1
+- Added a smooth fade between pages
+- Added the Last.fm "now playing" code (switches on once the Netlify function is set up)
 
 ## v3.0
 - Added a Trading page (`trading.html`) as a "Coming soon" preview

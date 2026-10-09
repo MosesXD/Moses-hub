@@ -7,7 +7,7 @@ if (document.readyState === "complete") setTimeout(hideLoader, 1400);
 else window.addEventListener("load", () => setTimeout(hideLoader, 1400));
 
 // Safety fallback: always hide after 4 seconds, even if something breaks
-setTimeout(hideLoader, 4000);
+setTimeout(hideLoader, 2000);
 // RANDOM LOADING PHRASE
 const quotes = [
   "Welcome to my corner of the internet.",

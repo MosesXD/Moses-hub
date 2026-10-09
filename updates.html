@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Moses' Hub dev log.">
+  <title>Updates · Moses' Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Site icon (shows in the browser tab): keep in every page's <head> -->
+  <link rel="icon" href="file_00000000a7ec81f5b90d551fe2397252.png">
+  <!-- Visitor analytics (Umami): keep this in the <head> of every page -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="00a338b9-1a16-401f-b276-070eda343e04"></script>
+</head>
+<body>
+  <!-- HEADER: copy this into every page. Keep the ids menuToggle and navLinks! -->
+  <header class="nav">
+    <a class="logo" href="index.html">MOSES<span>°</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <nav id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="games.html">Games</a>
+      <a href="updates.html" aria-current="page">Updates</a>
+      <a href="about.html">About</a>
+      <a href="links.html">Links</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <p class="eyebrow">UPDATES</p>
+      <h2>The dev log.</h2>
+      <div class="currently">
+        <div><strong>🛠️</strong><span><small>Currently building</small> Moses' Hub</span></div>
+        <div><strong>📚</strong><span><small>Currently learning</small> Web development</span></div>
+        <div><strong>🎮</strong><span><small>Up next</small> A first game</span></div>
+      </div>
+    </section>
+
+    <!-- LOG: newest first. To add an update, copy one whole <article>, paste it at the TOP, then change the words. -->
+    <section class="section section-tight">
+      <div class="log">
+        <article class="card log-entry">
+          <span class="tag">v3.3</span>
+          <h3>More pages</h3>
+          <ul>
+            <li>Added Games, Updates, Lab, Gallery, and Support pages</li>
+            <li>Reorganized the menu</li>
+            <li>Added a stats dashboard layout (not linked yet)</li>
+          </ul>
+        </article>
+        <article class="card log-entry">
+          <span class="tag">v3.2</span>
+          <h3>Analytics and site icon</h3>
+          <ul>
+            <li>Added visitor analytics</li>
+            <li>Added a site icon for the browser tab</li>
+          </ul>
+        </article>
+        <article class="card log-entry">
+          <span class="tag">v3.1</span>
+          <h3>Fade and now playing</h3>
+          <ul>
+            <li>Added a smooth fade between pages</li>
+            <li>Added the Last.fm now-playing code (switches on once the function is set up)</li>
+          </ul>
+        </article>
+        <article class="card log-entry">
+          <span class="tag">v3.0</span>
+          <h3>Trading preview</h3>
+          <ul>
+            <li>Added a Trading page as a Coming soon preview</li>
+            <li>No forms, payment links, or logins on that page</li>
+          </ul>
+        </article>
+        <article class="card log-entry">
+          <span class="tag">v2.0</span>
+          <h3>Multi-page hub</h3>
+          <ul>
+            <li>Split the one-page site into pages</li>
+            <li>Home now introduces the hub; About holds the owner info</li>
+          </ul>
+        </article>
+        <article class="card log-entry">
+          <span class="tag">v1.0.1</span>
+          <h3>Links and fixes</h3>
+          <ul>
+            <li>Added real Discord, GitHub, and Instagram links</li>
+            <li>Fixed the sticky header and gradient text</li>
+            <li>Added the PayPal Support card</li>
+            <li>Put the site live on GitHub Pages</li>
+          </ul>
+        </article>
+        <article class="card log-entry">
+          <span class="tag">v1.0</span>
+          <h3>First version</h3>
+          <ul>
+            <li>One-page site with Home, About, Projects, Gaming, Gallery, and Links</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: copy this into every page. Keep the id year! -->
+  <footer>
+    <p>Built by Moses · <span id="year"></span></p>
+    <div class="footer-links">
+      <a href="lab.html">Lab</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="support.html">Support</a>
+      <a href="trading.html">Trading</a>
+    </div>
+    <p>Version 3.3 · More pages.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stats dashboard layout (preview).">
+  <meta name="robots" content="noindex">
+  <title>Dashboard · Moses' Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Site icon (shows in the browser tab): keep in every page's <head> -->
+  <link rel="icon" href="file_00000000a7ec81f5b90d551fe2397252.png">
+  <!-- Visitor analytics (Umami): keep this in the <head> of every page -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="00a338b9-1a16-401f-b276-070eda343e04"></script>
+</head>
+<body>
+  <!-- HEADER: copy this into every page. Keep the ids menuToggle and navLinks! -->
+  <header class="nav">
+    <a class="logo" href="index.html">MOSES<span>°</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <nav id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="games.html">Games</a>
+      <a href="updates.html">Updates</a>
+      <a href="about.html">About</a>
+      <a href="links.html">Links</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <p class="eyebrow">DASHBOARD</p>
+      <h2>Visitors and support.</h2>
+      <!-- IMPORTANT: this page is a layout only and isn't linked from the menu.
+           Don't type real earnings here, because anyone can open this page.
+           A real dashboard needs a backend and a login, which come later. -->
+      <p class="notice">Layout preview only. No real numbers are shown.</p>
+
+      <h3 class="sub-heading">Visitors</h3>
+      <div class="stat-grid">
+        <article class="card stat-card"><small>DEMO DATA</small><strong>&mdash;</strong><span>Today</span></article>
+        <article class="card stat-card"><small>DEMO DATA</small><strong>&mdash;</strong><span>This week</span></article>
+        <article class="card stat-card"><small>DEMO DATA</small><strong>&mdash;</strong><span>This month</span></article>
+        <article class="card stat-card"><small>DEMO DATA</small><strong>&mdash;</strong><span>This year</span></article>
+      </div>
+
+      <h3 class="sub-heading">Support received</h3>
+      <div class="stat-grid">
+        <article class="card stat-card"><small>DEMO DATA</small><strong>&mdash;</strong><span>Today</span></article>
+        <article class="card stat-card"><small>DEMO DATA</small><strong>&mdash;</strong><span>This week</span></article>
+        <article class="card stat-card"><small>DEMO DATA</small><strong>&mdash;</strong><span>This month</span></article>
+        <article class="card stat-card"><small>DEMO DATA</small><strong>&mdash;</strong><span>This year</span></article>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: copy this into every page. Keep the id year! -->
+  <footer>
+    <p>Built by Moses · <span id="year"></span></p>
+    <div class="footer-links">
+      <a href="lab.html">Lab</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="support.html">Support</a>
+      <a href="trading.html">Trading</a>
+    </div>
+    <p>Version 3.3 · More pages.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

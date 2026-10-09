@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Games from Moses' Hub.">
+  <title>Games · Moses' Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Site icon (shows in the browser tab): keep in every page's <head> -->
+  <link rel="icon" href="file_00000000a7ec81f5b90d551fe2397252.png">
+  <!-- Visitor analytics (Umami): keep this in the <head> of every page -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="00a338b9-1a16-401f-b276-070eda343e04"></script>
+</head>
+<body>
+  <!-- HEADER: copy this into every page. Keep the ids menuToggle and navLinks! -->
+  <header class="nav">
+    <a class="logo" href="index.html">MOSES<span>°</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <nav id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="games.html" aria-current="page">Games</a>
+      <a href="updates.html">Updates</a>
+      <a href="about.html">About</a>
+      <a href="links.html">Links</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <p class="eyebrow">GAMES</p>
+      <h2>Things to play.</h2>
+      <p class="notice">Work in progress. The first game is still being built, so this page shows what's planned.</p>
+      <div class="cards">
+        <article class="card project-card">
+          <span class="project-number">01</span>
+          <h3>First Game</h3>
+          <p>An idle tycoon about running a fictional herb shop: buy ingredients, craft products, sell to clients, and grow.</p>
+          <span class="tag">IN PROGRESS</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- PREVIEW: a window where people can see the game.
+         WHEN THE GAME FILES ARE READY: put them in a folder called game and replace the box below with
+         an iframe that points to game/index.html (an iframe shows another page inside this one). -->
+    <section class="section section-tight">
+      <p class="eyebrow">PREVIEW</p>
+      <h2>A look at the game.</h2>
+      <div class="preview-frame">
+        <div>
+          <p>🎮 Preview coming soon</p>
+          <small>A short look at the game will show up here.</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEVELOPMENT PROGRESS: change the status word on the right as things get done. -->
+    <section class="section section-tight">
+      <p class="eyebrow">DEVELOPMENT PROGRESS</p>
+      <h2>What's done and what's next.</h2>
+      <div class="links-list">
+        <div class="card link-card"><span>Phase 1: buy, craft, sell</span><span>BUILDING</span></div>
+        <div class="card link-card"><span>Phase 2: study new recipes</span><span>PLANNED</span></div>
+        <div class="card link-card"><span>Phase 3: hire workers</span><span>PLANNED</span></div>
+        <div class="card link-card"><span>Phase 4: offline earnings</span><span>PLANNED</span></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: copy this into every page. Keep the id year! -->
+  <footer>
+    <p>Built by Moses · <span id="year"></span></p>
+    <div class="footer-links">
+      <a href="lab.html">Lab</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="support.html">Support</a>
+      <a href="trading.html">Trading</a>
+    </div>
+    <p>Version 3.3 · More pages.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

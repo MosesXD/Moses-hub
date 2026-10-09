@@ -252,3 +252,23 @@ nav a[aria-current="page"] { color: var(--text); }
 .faq summary { cursor: pointer; font-weight: 700; }
 .faq details p { color: var(--muted); margin-top: .6rem; }
 .faq details a { color: var(--cyan); }
+/* LOADING SCREEN */
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999; /* above everything, including the nav */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  background: var(--bg);
+  transition: opacity .5s ease, visibility .5s ease;
+}
+.loader.hide { opacity: 0; visibility: hidden; }
+.loader-img { width: 96px; height: 96px; object-fit: cover; border-radius: 50%; border: 1px solid var(--border); }
+.loader-logo { font-size: 1.6rem; font-weight: 800; letter-spacing: .08em; }
+.loader-logo span { color: var(--cyan); }
+.loader-bar { width: 180px; height: 4px; background: var(--border); border-radius: 99px; overflow: hidden; }
+.loader-fill { height: 100%; width: 0; background: linear-gradient(90deg, var(--cyan), var(--purple)); animation: fill 1.4s ease forwards; }
+@keyframes fill { to { width: 100%; } }

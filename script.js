@@ -21,7 +21,7 @@ const quotes = [
   "Some things are meant to grow in private.",
   "I’m around, just not available.",
   "Noise.𓆩🖤𓆪”,
-  "Quietly living, quietly growing. I'll be back.",
+ "Quietly living, quietly growing. I'll be back.",
   "Small steps, big progress.",
   "Making something from nothing.",
 "You might see me online, but that doesn't mean I'm available.",

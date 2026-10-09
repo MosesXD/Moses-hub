@@ -252,3 +252,8 @@ nav a[aria-current="page"] { color: var(--text); }
 .faq summary { cursor: pointer; font-weight: 700; }
 .faq details p { color: var(--muted); margin-top: .6rem; }
 .faq details a { color: var(--cyan); }
+@view-transition { navigation: auto; }
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
+}

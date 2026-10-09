@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Page not found · Moses' Hub</title>
+  <link rel="icon" href="https://mosesxd.github.io/moses-hub/file_00000000a7ec81f5b90d551fe2397252.png">
+  <!-- This page stands alone on purpose. GitHub shows it for broken links, even deep ones
+       like /moses-hub/oops/oops, where a normal style.css link would break.
+       So the styles are written right here and the links use full addresses. -->
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+  --bg: #070910;
+  --surface: #0d111c;
+  --surface-2: #111827;
+  --text: #f4f7ff;
+  --muted: #9aa5bb;
+  --cyan: #78e8ff;
+  --purple: #b59cff;
+  --border: rgba(255,255,255,.09);
+}
+    body {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 2rem;
+      background:
+        radial-gradient(circle at 80% 10%, rgba(120,232,255,.08), transparent 28rem),
+        radial-gradient(circle at 10% 40%, rgba(181,156,255,.07), transparent 25rem),
+        var(--bg);
+      color: var(--text);
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+    .eyebrow { color: var(--cyan); letter-spacing: .2em; font-size: .8rem; font-weight: 700; margin-bottom: 1rem; }
+    h1 { font-size: clamp(2.6rem, 9vw, 5rem); line-height: 1; letter-spacing: -.05em; margin-bottom: 1rem; }
+    h1 span {
+      background: linear-gradient(90deg, var(--cyan), var(--purple));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    p { color: var(--muted); max-width: 32rem; margin: 0 auto 2rem; }
+    .buttons { display: flex; flex-wrap: wrap; gap: .8rem; justify-content: center; }
+    a { text-decoration: none; padding: .8rem 1.1rem; border-radius: 999px; border: 1px solid var(--border); font-weight: 700; font-size: .9rem; color: var(--text); }
+    a.primary { background: var(--text); color: var(--bg); }
+  </style>
+  <!-- Visitor analytics (Umami): lets you see if people hit broken links -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="00a338b9-1a16-401f-b276-070eda343e04"></script>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">404</p>
+    <h1>Page <span>not found.</span></h1>
+    <p>That page doesn't exist, or it moved. Try one of these instead:</p>
+    <div class="buttons">
+      <a class="primary" href="https://mosesxd.github.io/moses-hub/">Home</a>
+      <a href="https://mosesxd.github.io/moses-hub/projects.html">Projects</a>
+      <a href="https://mosesxd.github.io/moses-hub/links.html">Links</a>
+    </div>
+  </main>
+</body>
+</html>

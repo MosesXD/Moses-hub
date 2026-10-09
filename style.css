@@ -252,8 +252,51 @@ nav a[aria-current="page"] { color: var(--text); }
 .faq summary { cursor: pointer; font-weight: 700; }
 .faq details p { color: var(--muted); margin-top: .6rem; }
 .faq details a { color: var(--cyan); }
-@view-transition { navigation: auto; }
+/* ---------- Added for the extra pages (v3.3) ---------- */
+/* Paste this at the very bottom of style.css. Don't replace the file. */
 
-@media (prefers-reduced-motion: reduce) {
-  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
+/* Footer link row (Lab, Gallery, Support, Trading) */
+.footer-links { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; }
+.footer-links a:hover { color: var(--text); }
+
+/* Smaller headings used inside a section */
+.sub-heading { margin: 2.5rem 0 1rem; font-size: 1.1rem; }
+
+/* Four stat boxes in a row (Dashboard page) */
+.stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+
+/* Game preview box, and the game inside it later */
+.preview-frame {
+  min-height: 320px;
+  border: 1px dashed rgba(255,255,255,.14);
+  border-radius: 28px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 2rem;
+  color: var(--muted);
+}
+.preview-frame p { color: var(--text); font-size: 1.2rem; margin-bottom: .4rem; }
+.preview-frame iframe { width: 100%; height: 520px; border: 0; border-radius: 28px; }
+
+/* Gallery pictures (used once you add images) */
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+.gallery-grid img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+}
+
+/* Dev log on the Updates page */
+.log { display: grid; gap: 1rem; max-width: 800px; }
+.log-entry .tag { margin-bottom: .8rem; }
+.log-entry ul { margin: .8rem 0 0 1.1rem; color: var(--muted); }
+.log-entry li { margin: .3rem 0; }
+
+/* Phones */
+@media (max-width: 760px) {
+  .stat-grid { grid-template-columns: repeat(2, 1fr); }
+  .preview-frame iframe { height: 420px; }
 }

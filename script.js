@@ -2,12 +2,12 @@
 const loader = document.getElementById("loader");
 function hideLoader() { if (loader) loader.classList.add("hide"); }
 
-// Hide after the page loads (waits 1.4s so the bar finishes)
-if (document.readyState === "complete") setTimeout(hideLoader, 1400);
-else window.addEventListener("load", () => setTimeout(hideLoader, 1400));
+const minShow = 400; // milliseconds the screen shows at minimum (0 = no minimum)
+if (document.readyState === "complete") setTimeout(hideLoader, minShow);
+else window.addEventListener("load", () => setTimeout(hideLoader, minShow));
 
-// Safety fallback: always hide after 4 seconds, even if something breaks
-setTimeout(hideLoader, 2000);
+setTimeout(hideLoader, 4000); // safety fallback
+
 // RANDOM LOADING PHRASE
 const quotes = [
   "Welcome to my corner of the internet.",

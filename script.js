@@ -11,7 +11,7 @@ setTimeout(hideLoader, 4000);
 // RANDOM LOADING PHRASE
 const quotes = [
   "Welcome to my corner of the internet.",
-  “Move quietly. Build honestly. Let time speak.”,
+“Move quietly. Build honestly. Let time speak.”,
   “One day, the life I'm quietly working toward will feel like home.”,
   "You won't always hear about what I'm going through or see what I'm building.",
   "Built one step at a time.",

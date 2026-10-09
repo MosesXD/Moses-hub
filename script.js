@@ -8,6 +8,18 @@ else window.addEventListener("load", () => setTimeout(hideLoader, 1400));
 
 // Safety fallback: always hide after 4 seconds, even if something breaks
 setTimeout(hideLoader, 4000);
+// RANDOM LOADING PHRASE
+const quotes = [
+  "Welcome to my corner of the internet.",
+  "Built one step at a time.",
+  "Still learning, still building.",
+  "Loading the good stuff...",
+  "Small steps, big progress.",
+  "Making something from nothing.",
+  "Almost there."
+];
+const quoteBox = document.getElementById("loaderQuote");
+if (quoteBox) quoteBox.textContent = quotes[Math.floor(Math.random() * quotes.length)];
 const year = document.getElementById("year");
 year.textContent = new Date().getFullYear();
 

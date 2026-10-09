@@ -273,3 +273,5 @@ nav a[aria-current="page"] { color: var(--text); }
 .loader-fill { height: 100%; width: 0; background: linear-gradient(90deg, var(--cyan), var(--purple)); animation: fill 1.4s ease forwards; }
 @keyframes fill { to { width: 100%; } }
 .loader-quote { color: var(--muted); font-size: .95rem; max-width: 260px; text-align: center; }
+.loader { animation: loaderOut .5s ease 4s forwards; }
+@keyframes loaderOut { to { opacity: 0; visibility: hidden; } }

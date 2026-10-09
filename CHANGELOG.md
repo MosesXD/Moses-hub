@@ -1,9 +1,13 @@
 # Changelog
+## v3.4
+- Added a custom 404 page
+- Added share previews for links shared on Discord and Instagram
+
 ## v3.3
 - Added Games, Updates, Lab, Gallery, and Support pages
 - Reorganized the menu
 - Added a stats dashboard layout (not linked yet)
- 
+
 ## v3.2
 - Added visitor analytics (Umami)
 - Added a site icon (shows in the browser tab)
